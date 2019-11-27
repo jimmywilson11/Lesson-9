@@ -33,9 +33,55 @@ body {
   text-decoration: none;
 }
 
+#title {
+  background: url(../img/slider_bg.png);
+}
+
+#title .title-head {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #FFEA00;
+  background-color: #424146;
+  font-size: 35px;
+}
+
+#portfolio-gallery {
+  text-align: center;
+  font-size: 24px;
+}
+
+#portfolio-gallery h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.menu-navigation {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.menu-navigation a {
+  font-size: 24px;
+  text-decoration: none;
+  font-family: Century Gothic, sans-serif;
+  padding: 7px 10px;
+}
+
+.menu-navigation a:hover {
+  background-color: #FFEA00;
+  color: #000;
+}
+
+.gallery {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .big-inf {
   padding-top: 30px;
-  background-color: #424147;
+  background-color: #424146;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
