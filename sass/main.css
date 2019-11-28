@@ -74,9 +74,15 @@ body {
   color: #000;
 }
 
-.gallery {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.modal-body h2 {
+  color: #FFEA00;
+  background-color: #424146;
+}
+
+.modal-body .author {
+  margin-top: 7px;
+  font-size: 18px;
+  color: #34526F;
 }
 
 .big-inf {
