@@ -3,6 +3,11 @@ body {
   font-family: Century Gothic, sans-serif;
 }
 
+a {
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
 .container {
   max-width: 1400px;
 }
@@ -83,6 +88,28 @@ body {
   margin-top: 7px;
   font-size: 18px;
   color: #34526F;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  background-color: #424146;
+  width: 30%;
+  height: 35%;
+  top: 35%;
+  left: 35%;
+  opacity: .7;
+}
+
+.overlay i {
+  font-size: 80px;
+  color: #FFF;
+  margin-top: 40px;
+}
+
+a:hover > .overlay {
+  display: block;
 }
 
 .big-inf {

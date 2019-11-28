@@ -3,6 +3,8 @@
 
 body
     font-family: $main-font
+a
+    transition: .4s all ease
 .container
     max-width: 1400px
 .main-menu
@@ -53,7 +55,24 @@ body
         margin-top: 7px
         font-size: 18px
         color: $dark-blue
-        
+
+.overlay
+    display: none
+    position: absolute
+    z-index: 9
+    background-color: $light-gray
+    width: 30%
+    height: 35%
+    top: 35%
+    left: 35%
+    opacity: .7
+    i
+        font-size: 80px
+        color: $white
+        margin-top: 40px
+a  
+    &:hover> .overlay
+        display: block               
 .big-inf
     padding-top: 30px
     background-color: $light-gray

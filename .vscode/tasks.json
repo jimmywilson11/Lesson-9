@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+	"command": "gulp",
+	"isShellCommand": true,
+	"args": ["--no-color"],
+	"showOutput": "always",
+	"problemMatchers": [
+		"$go"
+	]
+}
