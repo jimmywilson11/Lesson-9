@@ -3,7 +3,7 @@ $(document).ready(function(){
         var value = $(this).attr('data-filter');     
         if(value == "all")
         {
-            $('.filter').show('1000');
+            $('.filter').show('3000');
         }
         else
         {

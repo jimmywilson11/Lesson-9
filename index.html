@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
     <link rel="stylesheet" href="./sass/main.css">
     <title>Lesson 9</title>
 </head>
@@ -28,7 +28,7 @@
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link active" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
@@ -45,239 +45,245 @@
         </div>
     </header>
     <section id="title"> 
-        <div class="container">
-            <div class="title-head">
-                <h2>Portfolio</h2>
-            </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="title-head">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>           
         </div>   
     </section>
     <section id="portfolio-gallery">
-        <div class="row">
-            <div class="col">
-                <h2>We create quality designs</h2>
-                <p>We specialize in Web Design / Development and Graphic Design</p>
-                <ul class="row menu-navigation">
-                    <li class="nav-item"><a href="#" class="filter-button active" data-filter="all">All</a></li>
-                    <li class="nav-item"><a href="#" class="filter-button" data-filter="web">Web Site</a></li>
-                    <li class="nav-item"><a href="#" class="filter-button" data-filter="logo">Logo</a></li>
-                    <li class="nav-item"><a href="#" class="filter-button" data-filter="ui">UI Kit</a></li>
-                    <li class="nav-item"><a href="#" class="filter-button" data-filter="photo">Photo</a></li>
-                    <li class="nav-item"><a href="#" class="filter-button" data-filter="app">App Design</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="gallery">        
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 filter web">
-                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Graphic Design</h2>
-                                    <img src="./img/img1_mini.jpg" alt="Graphic Design">
-                                    <p class="author text-right">by Mike|Creative Mints</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8555640-GRAND-Graphic-Design'">Open</button>
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                               
-                                </div>
-                            </div>
-                        </div>
-                    </div>              
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img1.jpg" alt="Graphic Design">
-                        <div class="overlay" data-toggle="modal" data-target="#modal1">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>    
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 filter web ui">
-                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Flat UI</h2>
-                                    <img src="./img/img2_mini.jpg" alt="Flat UI">
-                                    <p class="author text-right">by Nathan Menegolo Bittencourt</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8520720-Just-for-fun'">Open</button>               
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>       
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img2.jpg" alt="Flat UI">
-                        <div class="overlay" data-toggle="modal" data-target="#modal2">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 item filter web">
-                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Architecture Web Design 1920 5 2x</h2>
-                                    <img src="./img/img3_mini.jpg" alt="Architecture Web Design 1920">
-                                    <p class="author text-right">by Tania Mree</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8513689-Web-1920-5-2x'">Open</button>            
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img3.jpg" alt="Architecture Web Design 1920">
-                        <div class="overlay" data-toggle="modal" data-target="#modal3">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 filter web">
-                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Personal Website - Light</h2>
-                                    <img src="./img/img4_mini.jpg" alt="Personal Website - Light">
-                                    <p class="author text-right">by Mike Skowronek</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8531901-Personal-website-light'">Open</button>
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                               
-                                </div>
-                            </div>
-                        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>We create quality designs</h2>
+                        <p>We specialize in Web Design / Development and Graphic Design</p>
+                        <ul class="row menu-navigation">
+                            <li class="nav-item"><a href="#" class="filter-button active" data-filter="all">All</a></li>
+                            <li class="nav-item"><a href="#" class="filter-button" data-filter="web">Web Site</a></li>
+                            <li class="nav-item"><a href="#" class="filter-button" data-filter="logo">Logo</a></li>
+                            <li class="nav-item"><a href="#" class="filter-button" data-filter="ui">UI Kit</a></li>
+                            <li class="nav-item"><a href="#" class="filter-button" data-filter="photo">Photo</a></li>
+                            <li class="nav-item"><a href="#" class="filter-button" data-filter="app">App Design</a></li>
+                        </ul>
                     </div>
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img4.jpg" alt="Personal Website - Light">
-                        <div class="overlay" data-toggle="modal" data-target="#modal4">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 filter logo">
-                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Logo</h2>
-                                    <img src="./img/img5_mini.jpg" alt="Logo">
-                                    <p class="author text-right">by DONFIX</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8521084-My-Logo'">Open</button>               
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            </div>       
+            <div class="gallery">        
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 filter web">
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Graphic Design</h2>
+                                        <img class="img-fluid" src="./img/img1_mini.jpg" alt="Graphic Design">
+                                        <p class="author text-right">by Mike|Creative Mints</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8555640-GRAND-Graphic-Design'">Open</button>
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                               
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>       
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img5.jpg" alt="Logo">
-                        <div class="overlay" data-toggle="modal" data-target="#modal5">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 filter ui">
-                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>UI Kit</h2>
-                                    <img src="./img/img6_mini.jpg" alt="UI Kit">
-                                    <p class="author text-right">by Ming08</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8538315-'">Open</button>            
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img6.jpg" alt="UI Kit">
-                        <div class="overlay" data-toggle="modal" data-target="#modal6">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 filter app">
-                    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Daily News App</h2>
-                                    <img src="./img/img7_mini.jpg" alt="Daily News App">
-                                    <p class="author text-right">by Fikri Yusrihan</p>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8507620-Daily-News-App'">Open</button>
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                               
-                                </div>
-                            </div>
-                        </div>
+                        </div>              
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img1.jpg" alt="Graphic Design">
+                            <div class="overlay" data-toggle="modal" data-target="#modal1">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>    
+                        </a>
                     </div>
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img7.jpg" alt="Daily News App">
-                        <div class="overlay" data-toggle="modal" data-target="#modal7">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 filter app">
-                    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Clinic Site and App Design</h2>
-                                    <img src="./img/img8_mini.jpg" alt="Clinic Site and App Design">
-                                    <p class="author text-right">by Bushra Khan</p>
+                    <div class="col-lg-4 col-md-6 mb-4 filter web ui">
+                        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Flat UI</h2>
+                                        <img class="img-fluid" src="./img/img2_mini.jpg" alt="Flat UI">
+                                        <p class="author text-right">by Nathan Menegolo Bittencourt</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8520720-Just-for-fun'">Open</button>               
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8546713-Website-Design'">Open</button>               
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>       
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img2.jpg" alt="Flat UI">
+                            <div class="overlay" data-toggle="modal" data-target="#modal2">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 item filter web">
+                        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Architecture Web Design 1920 5 2x</h2>
+                                        <img class="img-fluid" src="./img/img3_mini.jpg" alt="Architecture Web Design 1920">
+                                        <p class="author text-right">by Tania Mree</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8513689-Web-1920-5-2x'">Open</button>            
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img3.jpg" alt="Architecture Web Design 1920">
+                            <div class="overlay" data-toggle="modal" data-target="#modal3">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 filter web">
+                        <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Personal Website - Light</h2>
+                                        <img class="img-fluid" src="./img/img4_mini.jpg" alt="Personal Website - Light">
+                                        <p class="author text-right">by Mike Skowronek</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8531901-Personal-website-light'">Open</button>
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                               
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>       
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img8.jpg" alt="Clinic Site and App Design">
-                        <div class="overlay" data-toggle="modal" data-target="#modal8">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 filter photo">
-                    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mb-0 p-0">
-                                    <h2>Christmas Neon Sign</h2>
-                                    <img src="./img/img9_mini.jpg" alt="Christmas Neon Sign">
-                                    <p class="author text-right">by For the Love of Neon</p>
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img4.jpg" alt="Personal Website - Light">
+                            <div class="overlay" data-toggle="modal" data-target="#modal4">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 filter logo">
+                        <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Logo</h2>
+                                        <img class="img-fluid" src="./img/img5_mini.jpg" alt="Logo">
+                                        <p class="author text-right">by DONFIX</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8521084-My-Logo'">Open</button>               
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8561700-Christmas-Neon-Sign'">Open</button>            
-                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>       
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img5.jpg" alt="Logo">
+                            <div class="overlay" data-toggle="modal" data-target="#modal5">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 filter ui">
+                        <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>UI Kit</h2>
+                                        <img class="img-fluid" src="./img/img6_mini.jpg" alt="UI Kit">
+                                        <p class="author text-right">by Ming08</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8538315-'">Open</button>            
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img6.jpg" alt="UI Kit">
+                            <div class="overlay" data-toggle="modal" data-target="#modal6">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 filter app">
+                        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Daily News App</h2>
+                                        <img class="img-fluid" src="./img/img7_mini.jpg" alt="Daily News App">
+                                        <p class="author text-right">by Fikri Yusrihan</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8507620-Daily-News-App'">Open</button>
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>                               
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <a>
-                        <img class="img-fluid z-depth-1" src="./img/img9.jpg" alt="Christmas Neon Sign">
-                        <div class="overlay" data-toggle="modal" data-target="#modal9">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                    </a>
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img7.jpg" alt="Daily News App">
+                            <div class="overlay" data-toggle="modal" data-target="#modal7">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 filter app">
+                        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Clinic Site and App Design</h2>
+                                        <img class="img-fluid" src="./img/img8_mini.jpg" alt="Clinic Site and App Design">
+                                        <p class="author text-right">by Bushra Khan</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8546713-Website-Design'">Open</button>               
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img8.jpg" alt="Clinic Site and App Design">
+                            <div class="overlay" data-toggle="modal" data-target="#modal8">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 filter photo">
+                        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-md modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body mb-0 p-0">
+                                        <h2>Christmas Neon Sign</h2>
+                                        <img class="img-fluid" src="./img/img9_mini.jpg" alt="Christmas Neon Sign">
+                                        <p class="author text-right">by For the Love of Neon</p>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal" onclick="location.href='https://dribbble.com/shots/8561700-Christmas-Neon-Sign'">Open</button>            
+                                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <a>
+                            <img class="img-fluid z-depth-1" src="./img/img9.jpg" alt="Christmas Neon Sign">
+                            <div class="overlay" data-toggle="modal" data-target="#modal9">
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>         
@@ -299,16 +305,38 @@
                         <h2>Photo Stream</h2>
                         <ul class="gallery">
                             <li>
-                                <picture>
-                                    <source srcset="./webp/g1_1920x1080.webp" alt="Wallpaper 1" type="image/webp">
-                                    <img src="./img/g1_1920x1080.jpg" alt="Wallpaper 1">
-                                </picture>
+                                <a href="#" aria-label="Wallpaper 1">
+                                    <picture>
+                                        <source srcset="./webp/g1_1920x1080.webp" alt="Wallpaper 1" type="image/webp">
+                                        <img src="./img/g1_1920x1080.jpg" alt="Wallpaper 1" type="image/jpg">
+                                    </picture>
+                                </a>
                             </li>
-                            <li><img src="./img/g2_1920x1080.jpg" alt=""></li>
-                            <li><img src="./img/g3_1920x1080.jpg" alt=""></li>
-                            <li><img src="./img/g4_1920x1080.jpg" alt=""></li>
-                            <li><img src="./img/g5_1920x1080.jpg" alt=""></li>
-                            <li><img src="./img/g6_1920x1080.jpg" alt=""></li>
+                            <li>
+                                <a href="#" aria-label="Wallpaper 2">
+                                    <img src="./img/g2_1920x1080.jpg" alt="Wallpaper 2" type="image/jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Wallpaper 3">
+                                    <img src="./img/g3_1920x1080.jpg" alt="Wallpaper 3" type="image/jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Wallpaper 4">
+                                    <img src="./img/g4_1920x1080.jpg" alt="Wallpaper 4" type="image/jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Wallpaper 5">
+                                    <img src="./img/g5_1920x1080.jpg" alt="Wallpaper 5" type="image/jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Wallpaper 6">
+                                    <img src="./img/g6_1920x1080.jpg" alt="Wallpaper 6" type="image/jpg">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -403,7 +431,7 @@
                 </div>
                 <div class="footer-menu-box">
                     <nav class="footer-nav">
-                        <ul class="footer-menu">
+                        <ul class="footer-menu flex-wrap">
                             <li class="nav-item"><a href="index.html">Home</a></li>
                             <li class="nav-item"><a href="#">Portfolio</a></li>
                             <li class="nav-item"><a href="#">Blog</a></li>
