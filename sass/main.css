@@ -22,6 +22,7 @@ a {
 }
 
 .main-menu .nav-item {
+  color: #000;
   text-align: center;
 }
 
@@ -54,7 +55,7 @@ a {
   text-transform: uppercase;
   color: #FFEA00;
   font-size: 35px;
-  padding: 3px 45px 3px 3px;
+  padding: 5px 45px 5px 20px;
 }
 
 #portfolio-gallery {
@@ -63,7 +64,6 @@ a {
 }
 
 #portfolio-gallery h2 {
-  font-size: 35px;
   text-transform: uppercase;
 }
 
@@ -436,6 +436,12 @@ a:hover > .overlay {
 }
 
 @media screen and (max-width: 576px) {
+  #portfolio-gallery {
+    font-size: 24px;
+  }
+  #portfolio-gallery h2 {
+    font-size: 35px;
+  }
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -461,6 +467,12 @@ a:hover > .overlay {
 }
 
 @media screen and (max-width: 768px) {
+  #portfolio-gallery {
+    font-size: 24px;
+  }
+  #portfolio-gallery h2 {
+    font-size: 35px;
+  }
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -486,6 +498,12 @@ a:hover > .overlay {
 }
 
 @media screen and (max-width: 992px) {
+  #portfolio-gallery {
+    font-size: 24px;
+  }
+  #portfolio-gallery h2 {
+    font-size: 35px;
+  }
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -11,6 +11,7 @@ a
     flex-grow: .4
     justify-content: space-between
     .nav-item
+        color: $black
         text-align: center
         .nav-link
             font-family: $menu-font
@@ -24,8 +25,7 @@ a
             &:active
                 color: $black
                 background-color: $yellow
-                text-decoration: none
-                
+                text-decoration: none                
 #title
     background: url(../img/slider_bg.png)        
 .title-head    
@@ -35,12 +35,11 @@ a
         text-transform: uppercase
         color: $yellow
         font-size: 35px
-        padding: 3px 45px 3px 3px        
+        padding: 5px 45px 5px 20px        
 #portfolio-gallery
     text-align: center
     font-size: 24px
     h2
-        font-size: 35px
         text-transform: uppercase
 .menu-navigation
     justify-content: space-around
@@ -263,6 +262,10 @@ a
         width: 80%
         flex-wrap: wrap
 @media screen and ( max-width: 576px )   
+    #portfolio-gallery
+        font-size: 24px
+        h2    
+            font-size: 35px
     .social
         flex-direction: column
         h3
@@ -277,6 +280,10 @@ a
         .container
             justify-content: center
 @media screen and ( max-width: 768px )
+    #portfolio-gallery
+        font-size: 24px
+        h2    
+            font-size: 35px
     .social
         flex-direction: column
         span
@@ -291,6 +298,10 @@ a
         .container
             justify-content: center
 @media screen and ( max-width: 992px )
+    #portfolio-gallery
+        font-size: 24px
+        h2    
+            font-size: 35px
     .social   
         flex-direction: column 
     .social-networks
