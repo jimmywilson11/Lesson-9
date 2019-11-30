@@ -1,18 +1,28 @@
 $(document).ready(function(){
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');     
-        if(value == "all")
-        {
-            $('.filter').show('3000');
-        }
-        else
-        {
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');            
-        }
-    });    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+  
+  var $container = $(".masonry-container");
+  $container.imagesLoaded(function () {
+    $container.masonry({
+      columnWidth: ".item",
+      itemSelector: ".item"
+    });
+  });
+  
+  
+  $(".owl-carousel").owlCarousel({
+    autoPlay: 2000,
+    items: 8
+  });
 });
+
+if($(window).width() < 420) {
+  $(".owl-carousel").owlCarousel({
+    items: 3
+  });
+};
+
+if($(window).width() < 576) {
+  $(".owl-carousel").owlCarousel({
+    items: 5
+  });
+};
