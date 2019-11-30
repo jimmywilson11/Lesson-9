@@ -64,13 +64,8 @@ a {
 }
 
 #portfolio-gallery h2 {
+  margin-top: 15px;
   text-transform: uppercase;
-}
-
-.menu-navigation {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 60%;
 }
 
 .menu-navigation a {
@@ -110,9 +105,10 @@ a {
 }
 
 .overlay i {
-  font-size: 80px;
   color: #FFF;
-  margin-top: 40px;
+  top: 50%;
+  -webkit-transform: translate(0, 55%);
+          transform: translate(0, 55%);
 }
 
 a:hover > .overlay {
@@ -408,6 +404,15 @@ a:hover > .overlay {
 }
 
 @media screen and (max-width: 420px) {
+  .menu-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .gallery {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -436,6 +441,12 @@ a:hover > .overlay {
 }
 
 @media screen and (max-width: 576px) {
+  .menu-navigation {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #portfolio-gallery {
     font-size: 24px;
   }
@@ -516,10 +527,12 @@ a:hover > .overlay {
   }
   .email {
     margin-top: 3px;
-    width: 75%;
   }
   .black .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .black .footer-menu-box {
+    width: 80%;
   }
 }

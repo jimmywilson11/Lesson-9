@@ -21,11 +21,11 @@ a
             &:hover 
                 color: $black
                 background-color: $yellow
-                text-decoration: none      
+                text-decoration: none
             &:active
                 color: $black
                 background-color: $yellow
-                text-decoration: none                
+                text-decoration: none                      
 #title
     background: url(../img/slider_bg.png)        
 .title-head    
@@ -40,10 +40,9 @@ a
     text-align: center
     font-size: 24px
     h2
+        margin-top: 15px
         text-transform: uppercase
 .menu-navigation
-    justify-content: space-around
-    width: 60%
     a
         font-size: 24px
         text-decoration: none
@@ -52,6 +51,7 @@ a
         &:hover
             background-color: $yellow
             color: $black
+        
 .modal-body
     h2
         color: $yellow        
@@ -73,9 +73,9 @@ a
     left: 35%
     opacity: .7
     i
-        font-size: 80px
         color: $white
-        margin-top: 40px
+        top: 50%
+        transform: translate(0, 55%)
 a  
     &:hover> .overlay
         display: block               
@@ -248,6 +248,9 @@ a
                 background-color: $yellow
                 text-decoration: none
 @media screen and ( max-width: 420px )
+    .menu-navigation
+        flex-direction: column
+        justify-content: center
     .gallery
         justify-content: center
     .social
@@ -261,7 +264,10 @@ a
     .footer-menu
         width: 80%
         flex-wrap: wrap
-@media screen and ( max-width: 576px )   
+@media screen and ( max-width: 576px )
+    .menu-navigation
+        width: 100%
+        justify-content: center   
     #portfolio-gallery
         font-size: 24px
         h2    
@@ -309,7 +315,8 @@ a
         margin-top: 10px
     .email
         margin-top: 3px
-        width: 75%
-    .black
+    .black       
         .container
-            flex-wrap: wrap
+            flex-wrap: wrap         
+        .footer-menu-box
+            width: 80%
