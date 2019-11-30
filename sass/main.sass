@@ -18,101 +18,118 @@ body
             &:hover 
                 color: $black
                 background-color: $yellow
-                text-decoration: none    
+                text-decoration: none
+    .active-bg
+        background-color: $yellow    
 #slider
-    padding-top: 50px
+    padding-top: 20px
+    position: relative
     background: url(../img/slider_bg.png)
     &:nth-last-child(2)
         margin-bottom: 10px
-.description
-    flex-wrap: wrap    
-.title
-    display: inline
-    background-color: $yellow
-    text-transform: uppercase
-    font-size: 70px
-    h2
-        display: inline
-        background-color: $yellow
-        text-transform: uppercase
-        font-size: 70px
-.description-text
-    display: inline
-    background-color: $gray
-    font-size: 24px
-    color: $white
-    text-transform: uppercase    
-.btn-order
-    display: block
-    margin: 0 auto
-    width: 192px
-    padding: 5px 10px
-    text-decoration: none
-    text-align: center
-    font-size: 26px
-    background-color: $black
-    color: $white
-    &:hover
-        border-bottom: 2px solid $yellow
+
+    .btn-order
+        display: block
+        padding: 5px 40px
         text-decoration: none
+        text-align: center
+        font: 24px $main-font
+        background-color: $black
         color: $white
+        &:hover
+            border-bottom: 3px solid $yellow
+            text-decoration: none
+            color: $yellow
+.arrow 
+    position: absolute
+    top: calc(50% - 50px)
+    height: 10%
+    width: 2%
+    background-color: $black
+    opacity: 1
+    span
+        color: $white
+    &:hover 
+        opacity: 0.8
 .faces
     position: relative
-    margin: 0 auto
-    img    
-        margin-left: 30px
+    margin: 40px auto
+    img
+        margin: 0 auto
 .indicators  
     li
         width: 10px
         height: 10px
-        background-color: #464646
+        background-color: $gray
         border: 3px solid $black
     .active
         background-color: $yellow
 .content-description
     h2
-        margin-top: 90px
+        margin-top: 50px
         font-size: 35px
         text-transform: uppercase
         text-align: center
     p
         font-size: 24px
         text-align: center
-.card-deck
-    padding-top: 60px
-    padding-bottom: 90px
-.card
+.design-item 
+    width: 250px
+    height: auto
     position: relative
-    margin: 0 auto
-    text-align: center
-    width: 80%
-    &:hover > .overlay
+    margin-bottom: 30px
+    &:hover > .card-overlay
         display: block
-        width: 78%        
-    .card-body
-        background-color: $yellow       
-        .card-text
-            text-transform: uppercase
-            font-size: 20px 
-    .card-footer
-        resize: none
-        background-color: $gray       
-        p
-            font-size: 15px
-            color: $white
-            margin-bottom: 1px       
-    .overlay
+        transition: all 0.5s ease
+.design-card 
+    position: relative
+    background-color: $yellow
+    padding-top: 40px
+    color: $black
+    img 
+        margin-bottom: 35px
+        max-height: 88px
+    h3 
+        color: $black
+        text-align: center
+        text-transform: uppercase
+        font-size: 20px
+        font: $menu-font
+        margin-bottom: 21px  
+    p 
+        width: 100%
+        padding: 20px 0
+        font-size: 13px
+        text-align: center
+        color: $white
+        background-color: $light-gray
+.card-overlay
+    position: absolute
+    top: 0 
+    display: none
+    opacity: 1
+    &::after
+        content: ''
         position: absolute
-        display: none
-        img
-            width: 87%
-        &::after
-            content: ''
-            position: absolute
-            left: 180px
-            bottom: 45px
-            border: 10px solid transparent
-            border-bottom: 10px solid $gray
+        left: 80%
+        bottom: 31%
+        border: 15px solid transparent
+        border-bottom: 15px solid $gray
+    h3
+        font: $menu-font
+        font-size: 20px
+        color: $white
+        background-color: $light-gray
+        padding: 8px 10px 0
+        position: relative
+    p
+        font-size: 10px
+        color: $white
+    span
+        margin-right: 15px
+        font-size: 10px
+        color: $yellow
+
 .head-block
     position: relative
     margin: 0 auto
@@ -121,23 +138,13 @@ body
     &::before
         position: absolute
         content: ''
-        width: calc(50% + 60px)
+        width: calc(50% + 91px)
         right: 110%
         display: block
         height: 2px
-        background: $gray
-        z-index: 1
-        top: 50%
-    &::after
-        position: absolute
-        content: ''
-        width: calc(50% + 60px)
-        left: 110%
-        display: block
-        height: 2px
-        background: $gray
-        z-index: 1
-        top: 50%
+        background: $light-gray
+        z-index: 3
+        top: 50%    
     h2
         font-size: 18px
         color: $yellow
@@ -159,22 +166,7 @@ body
     p
         margin-top: 34px
         text-align: center
-.owl-carousel
-    .owl-nav
-        position: absolute
-        z-index: 2
-        padding: 7px 7px
-        background-color: $black
-        cursor: pointer
-        opacity: 1
-        span
-            color: $white
-        &:hover 
-            opacity: 0.7 
-        .arrow-left  
-            top: 50%
-        .arrow-right 
-            top: 50%           
+
 .big-inf
     padding-top: 30px
     background-color: $light-gray
