@@ -628,7 +628,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .faces img {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
   .social {
@@ -643,7 +643,6 @@ body {
   }
   .email {
     margin-top: 3px;
-    width: 75%;
   }
   .black .container {
     -ms-flex-wrap: wrap;
