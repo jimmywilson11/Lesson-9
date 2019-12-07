@@ -39,12 +39,6 @@ a {
   text-decoration: none;
 }
 
-.main-menu .nav-item .nav-link:active {
-  color: #000;
-  background-color: #FFEA00;
-  text-decoration: none;
-}
-
 #title {
   background: url(../img/slider_bg.png);
 }
@@ -78,6 +72,10 @@ a {
 .menu-navigation a:hover {
   background-color: #FFEA00;
   color: #000;
+}
+
+.active-bg {
+  background-color: #FFEA00;
 }
 
 .modal-body h2 {
